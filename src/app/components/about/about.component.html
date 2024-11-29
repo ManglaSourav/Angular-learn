@@ -1,0 +1,14 @@
+<p>about works!</p>
+<app-sample></app-sample>
+<p>{{title}}</p>
+<p>{{title | capitalise}}</p>
+<p [innerText]="title | capitalise"></p>
+
+<div>{{message}}</div>
+
+<div>POSTs</div>
+<ul>
+    <li *ngFor="let item of items">
+        {{item.title}}
+    </li>
+</ul>
