@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-sample',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './sample.component.css'
 })
 export class SampleComponent {
+
 
 }

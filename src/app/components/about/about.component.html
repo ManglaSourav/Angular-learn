@@ -5,8 +5,14 @@
 <p [innerText]="title | capitalise"></p>
 
 <div>{{message}}</div>
+<div>promise data {{dataPromise | async}}</div>
+<div>observable data {{dataObservable | async}}</div>
+<div>observable stream {{obseravableStream | async}}</div>
+<div>obseravableSubscribedStream {{obseravableSubscribedStream}}</div>
 
 <div>POSTs</div>
+
+
 <ul>
     <li *ngFor="let item of items">
         {{item.title}}

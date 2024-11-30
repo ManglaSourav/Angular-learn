@@ -6,3 +6,7 @@
 <h2>Hello {{ firstName }}!</h2>
 <input type="text" [(ngModel)]="firstName" />
 <!-- </main> -->
+<p style="color:red">Message from Parent : {{parentMessage}}</p>
+<p style="color:pink">Message from child : {{dataFromChild}}</p>
+
+<app-submain [childMessage]="parentMessage" (messageEvent)="receiveMessage($event)"></app-submain>
