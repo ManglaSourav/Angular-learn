@@ -48,13 +48,11 @@ export class AboutComponent {
       .subscribe(
         {
           next: (res) => {
-            console.log(res);
             this.items = res.splice(0, 5)
-
+            console.log(this.items[1]);
           },
           error: (error) => {
             console.log("Error occured", error.message);
-
           }
         })
 
@@ -71,21 +69,14 @@ export class AboutComponent {
     }).subscribe((data) => {
       this.obseravableSubscribedStream = data
     })
-    // this.subscription = 
-
-
 
   }
 
-
   onDestroy() {
-
     if (this.subscription) {
       this.subscription.unsubscribe()
     }
-
   }
-
 
 
 }

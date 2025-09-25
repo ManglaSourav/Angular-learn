@@ -4,7 +4,7 @@ import { AboutComponent } from './components/about/about.component';
 import { AppComponent } from './app.component';
 
 export const routes: Routes = [
-    // { path: '', component: AppComponent }, // Default route showing double code
+    { path: '', component: AppComponent }, // Default route showing double code
 
     { path: "about", component: AboutComponent },
     {
